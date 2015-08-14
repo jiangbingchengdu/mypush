@@ -1,0 +1,144 @@
+Windows PowerShell
+版权所有 (C) 2009 Microsoft Corporation。保留所有权利。
+
+D:\用户目录\我的文档\GitHub\mypush [master +1 ~0 -0 !]> git add -i
+           staged     unstaged path
+
+
+*** Commands ***
+  1: status       2: update       3: revert       4: add untracked
+  5: patch        6: diff         7: quit         8: help
+What now> s
+           staged     unstaged path
+
+
+*** Commands ***
+  1: status       2: update       3: revert       4: add untracked
+  5: patch        6: diff         7: quit         8: help
+What now> 7
+Bye.
+D:\用户目录\我的文档\GitHub\mypush [master +1 ~0 -0 !]> ls
+
+
+    目录: D:\用户目录\我的文档\GitHub\mypush
+
+
+Mode                LastWriteTime     Length Name
+----                -------------     ------ ----
+-a---        2014-12-19     12:57        395 .gitattributes
+-a---        2015-08-14     13:33        617 .gitignore
+-a---        2015-08-14     12:56         49 my.cs
+
+
+D:\用户目录\我的文档\GitHub\mypush [master +1 ~0 -0 !]> git add my.cs
+D:\用户目录\我的文档\GitHub\mypush [master +1 ~0 -0]> git commit
+Aborting commit due to empty commit message.
+D:\用户目录\我的文档\GitHub\mypush [master +1 ~0 -0]> git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository us
+ing
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+D:\用户目录\我的文档\GitHub\mypush [master +1 ~0 -0 | +1 ~0 -0 !]> git push orig
+in master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+D:\用户目录\我的文档\GitHub\mypush [master +1 ~0 -0 | +1 ~0 -0 !]> git commit -m
+ "asdad"
+[master 5c0103b] asdad
+ 1 file changed, 5 insertions(+)
+ create mode 100644 my.cs
+D:\用户目录\我的文档\GitHub\mypush [master +1 ~0 -0 !]> git push origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+D:\用户目录\我的文档\GitHub\mypush [master +1 ~0 -0 !]> git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository us
+ing
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+D:\用户目录\我的文档\GitHub\mypush [master +1 ~0 -0 !]> git add ceshi
+fatal: pathspec 'ceshi' did not match any files
+D:\用户目录\我的文档\GitHub\mypush [master +1 ~0 -0 !]> git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository us
+ing
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+D:\用户目录\我的文档\GitHub\mypush [master +1 ~0 -0 !]> git remote add origin ht
+tps://github.com/jiangbingchengdu/MyFirstGuibubProject.
+D:\用户目录\我的文档\GitHub\mypush [master +1 ~0 -0 !]> git remote add origin ht
+tps://github.com/jiangbingchengdu/mypush.git
+fatal: remote origin already exists.
+D:\用户目录\我的文档\GitHub\mypush [master +1 ~0 -0 !]> git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+D:\用户目录\我的文档\GitHub\mypush [master +1 ~0 -0 !]> git push origin master
+remote: Repository not found.
+fatal: repository 'https://github.com/jiangbingchengdu/MyFirstGuibubProject./' n
+ot found
+D:\用户目录\我的文档\GitHub\mypush [master +1 ~0 -0 !]> git push origin master
+Everything up-to-date
+D:\用户目录\我的文档\GitHub\mypush [master +1 ~0 -0 !]> git push origin master
+Everything up-to-date
+D:\用户目录\我的文档\GitHub\mypush [master +2 ~0 -0 !]> ls
+
+
+    目录: D:\用户目录\我的文档\GitHub\mypush
+
+
+Mode                LastWriteTime     Length Name
+----                -------------     ------ ----
+-a---        2014-12-19     12:57        395 .gitattributes
+-a---        2015-08-14     13:33        617 .gitignore
+-a---        2015-08-14     12:56         49 my.cs
+-a---        2015-08-14     13:41         64 my_1.cs
+-a---        2015-08-14     13:34        216 vl232f0g.klb.txt
+
+
+D:\用户目录\我的文档\GitHub\mypush [master +2 ~0 -0 !]> git add my_1.cs
+D:\用户目录\我的文档\GitHub\mypush [master +1 ~0 -0 | +1 ~0 -0 !]> git commit -m
+"新的描述"
+[master 02792ec] 新的描述
+ 1 file changed, 5 insertions(+)
+ create mode 100644 my_1.cs
+
+Warning: Your console font probably doesn't support Unicode. If you experience s
+trange characters in the output, consider switching to a TrueType font such as L
+ucida Console!
+D:\用户目录\我的文档\GitHub\mypush [master +1 ~0 -0 !]> git push
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 336 bytes | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+To https://github.com/jiangbingchengdu/mypush.git
+   5c0103b..02792ec  master -> master
+D:\用户目录\我的文档\GitHub\mypush [master +1 ~0 -0 !]> ^V^V^V
+D:\用户目录\我的文档\GitHub\mypush [master +1 ~0 -0 !]>
+D:\用户目录\我的文档\GitHub\mypush [master +1 ~0 -0 !]>
+D:\用户目录\我的文档\GitHub\mypush [master +1 ~0 -0 !]> y^Y^Y
